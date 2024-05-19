@@ -96,6 +96,7 @@ const from = location.state?.from?.pathname || '/'
 
                             <div className="form-control">
                                 <label className="label">
+                                   
                                     <LoadCanvasTemplate />
                                 </label>
                                 <input onBlur={handleValidateCaptcha} type="text" name="captcha" placeholder="type the captcha above" className="input input-bordered" />
@@ -103,7 +104,9 @@ const from = location.state?.from?.pathname || '/'
 
 
                             <div className="form-control mt-6">
-                                <input disabled={disabled} className="btn btn-primary" type="submit" value="Login" />
+                                 {/*TODO: apply disabled for captcha */}
+                                {/* <input disabled={disabled} className="btn btn-primary" type="submit" value="Login" /> */}
+                                <input disabled={false} className="btn btn-primary" type="submit" value="Login" />
                             </div>
                         </form>
 
